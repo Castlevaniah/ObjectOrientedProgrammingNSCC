@@ -1,19 +1,25 @@
 /***********************************************************************
  * Author: Aaron Hirtle                                                  
- * Date:   2025-01-18                                               
- * Class:  Intro to Object Oriented Programming PROG1400                                                 
- * Assignment: Exercise 2                           
+ * Date:   2025-01-25                                                
+ * Class:  Intro to Object Oriented Programming PROG1400              
+ * Assignment: Exercise 3                                             
  ***********************************************************************/
 
-
-
-public class RPGCharacter {
+ public class RPGCharacter {
     private String name;
     private String role;  
     private int health;
     private int strength;
 
-    // Initialize
+    // No-argument Constructor
+    public RPGCharacter() {
+        this.name = "Unknown";
+        this.role = "Warrior";
+        this.health = 100;
+        this.strength = 10;
+    }
+
+    // Parameterized Constructor
     public RPGCharacter(String name, String role, int health, int strength) {
         this.name = name;
         this.role = role;
