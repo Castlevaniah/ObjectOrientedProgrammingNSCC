@@ -1,3 +1,10 @@
+/***********************************************************************
+ * Author: Aaron Hirtle                                                  
+ * Date:   2025-03-02                                                
+ * Class:  Intro to Object Oriented Programming PROG1400              
+ * Assignment #1                                             
+ ***********************************************************************/
+
 // Base class: Person (abstract class)
 abstract class Person {
     
