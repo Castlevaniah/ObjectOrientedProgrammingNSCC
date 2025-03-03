@@ -1,3 +1,10 @@
+/***********************************************************************
+ * Author: Aaron Hirtle                                                  
+ * Date:   2025-03-02                                                
+ * Class:  Intro to Object Oriented Programming PROG1400              
+ * Assignment #1                                             
+ ***********************************************************************/
+
 import java.util.ArrayList;  // Import ArrayList to store students
 import java.util.Scanner;    // Import Scanner for user input
 
