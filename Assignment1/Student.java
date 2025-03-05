@@ -1,33 +1,32 @@
 /***********************************************************************
  * Author: Aaron Hirtle                                                  
- * Date:   2025-03-02                                                
- * Class:  Intro to Object Oriented Programming PROG1400              
- * Assignment #1                                             
+ * Date:   2025-03-02                                                  
+ * Class:  Intro to Object Oriented Programming PROG1400               
+ * Assignment #1                                                       
  ***********************************************************************/
 
-// Student class extends Person (inherits properties and methods)
+// Student class inherits from Person
 public class Student extends Person {
     
-    // Static variable to generate unique student IDs
-    private static int idCounter = 1000;
+    private static int idCounter = 1000; // Counter for generating student IDs
     
-    // Student-specific attributes
+    // Student attributes
     private String studentId;
     private String major;
     private double gpa;
     
     // Constructor with parameters
     public Student(String name, int age, String address, String major, double gpa) {
-        super(name, age, address); // Call the constructor of Person
-        this.studentId = generateStudentId(); // Assign a unique ID
+        super(name, age, address); // Call to Person constructor
+        this.studentId = generateStudentId(); // Generate unique ID
         this.major = major;
         this.gpa = gpa;
     }
     
-    // Default constructor (creates a student with default values)
+    // Default constructor
     public Student() {
-        super("Unknown", 0, "Unknown");
-        this.studentId = generateStudentId();
+        super("Unknown", 0, "Unknown"); // Default values for Person
+        this.studentId = generateStudentId(); // Generate unique ID
         this.major = "Undeclared";
         this.gpa = 0.0;
     }
@@ -37,7 +36,7 @@ public class Student extends Person {
         return "S" + (idCounter++);
     }
     
-    // Getter for student ID 
+    // Getter for student ID
     public String getStudentId() {
         return studentId;
     }
@@ -60,10 +59,10 @@ public class Student extends Person {
         this.gpa = gpa;
     }
     
-    // Override method to display student details
+    // Display student details
     @Override
     public void displayDetails() {
-        super.displayDetails(); // Call displayDetails() from Person class
+        super.displayDetails(); // Call to Person's displayDetails
         System.out.println("STUDENT ID : " + studentId);
         System.out.println("MAJOR      : " + major);
         System.out.println("GPA        : " + gpa);
